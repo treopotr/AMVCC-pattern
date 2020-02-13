@@ -88,16 +88,16 @@ public class EntitiesController : Controller
 
         if (_normalBehaviour)
         {
-            app.EventsHandler(EventsAddoner.RavenMoovePattern, this);
-            app.EventsHandler(EventsAddoner.WolfMoovePattern, this);
+            EventExecution(EventsAddoner.RavenMoovePattern, this);
+            EventExecution(EventsAddoner.WolfMoovePattern, this);
         }
         
 
 
         if (_ravenDoLikeWolfAndWolfDoLikeRaven)
         {
-            app.EventsHandler(EventsAddoner.RavenDoLikeWolf, this);
-            app.EventsHandler(EventsAddoner.WolfDoLikeRaven, this);
+            EventExecution(EventsAddoner.RavenDoLikeWolf, this);
+            EventExecution(EventsAddoner.WolfDoLikeRaven, this);
         }
 
 
